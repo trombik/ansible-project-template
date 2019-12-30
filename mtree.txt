@@ -1,0 +1,334 @@
+#	   user: trombik
+#	machine: x270
+#	   tree: /usr/home/trombik/github/trombik/ansible-project-buildbot
+#	   date: Sat Jun 15 08:30:04 2019
+
+# .
+/set type=dir uid=1001 gid=0 mode=0755 nlink=1 flags=none
+.               nlink=6 time=1560555004.621890000
+
+# ./.vagrant
+.vagrant        nlink=4 time=1560543235.355689000
+
+# ./.vagrant/machines
+machines        nlink=3 time=1560543235.355738000
+
+# ./.vagrant/machines/obuild.i.trombik.org
+obuild.i.trombik.org \
+                nlink=3 time=1560543235.355782000
+
+# ./.vagrant/machines/obuild.i.trombik.org/virtualbox
+virtualbox      nlink=2 time=1560552287.503345000
+# ./.vagrant/machines/obuild.i.trombik.org/virtualbox
+..
+
+# ./.vagrant/machines/obuild.i.trombik.org
+..
+
+# ./.vagrant/machines
+..
+
+
+# ./.vagrant/rgloader
+rgloader        nlink=2 time=1560543171.351350000
+# ./.vagrant/rgloader
+..
+
+# ./.vagrant
+..
+
+
+# ./inventories
+inventories     nlink=3 time=1560542928.714252000
+
+# ./inventories/virtualbox
+virtualbox      nlink=2 time=1560551458.079413000
+# ./inventories/virtualbox
+..
+
+# ./inventories
+..
+
+
+# ./playbooks
+playbooks       nlink=3 time=1560551660.582542000
+
+# ./playbooks/group_vars
+group_vars      nlink=2 time=1560552581.423575000
+# ./playbooks/group_vars
+..
+
+# ./playbooks
+..
+
+
+# ./roles.galaxy
+roles.galaxy    nlink=4 time=1560551689.305779000
+
+# ./roles.galaxy/trombik.hostname
+trombik.hostname \
+                nlink=14 time=1560544141.438431000
+
+# ./roles.galaxy/trombik.hostname/.github
+.github         nlink=2 time=1560544141.429617000
+# ./roles.galaxy/trombik.hostname/.github
+..
+
+
+# ./roles.galaxy/trombik.hostname/defaults
+defaults        nlink=2 time=1560544141.431487000
+# ./roles.galaxy/trombik.hostname/defaults
+..
+
+
+# ./roles.galaxy/trombik.hostname/extra_modules
+extra_modules   nlink=2 time=1560544141.431721000
+# ./roles.galaxy/trombik.hostname/extra_modules
+..
+
+
+# ./roles.galaxy/trombik.hostname/files
+files           nlink=2 time=1560544141.431892000
+# ./roles.galaxy/trombik.hostname/files
+..
+
+
+# ./roles.galaxy/trombik.hostname/filter_plugins
+filter_plugins  nlink=2 time=1560544141.432068000
+# ./roles.galaxy/trombik.hostname/filter_plugins
+..
+
+
+# ./roles.galaxy/trombik.hostname/handlers
+handlers        nlink=2 time=1560544141.432348000
+# ./roles.galaxy/trombik.hostname/handlers
+..
+
+
+# ./roles.galaxy/trombik.hostname/library
+library         nlink=2 time=1560544141.432549000
+# ./roles.galaxy/trombik.hostname/library
+..
+
+
+# ./roles.galaxy/trombik.hostname/meta
+meta            nlink=2 time=1560544141.439137000
+# ./roles.galaxy/trombik.hostname/meta
+..
+
+
+# ./roles.galaxy/trombik.hostname/tasks
+tasks           nlink=2 time=1560544141.433841000
+# ./roles.galaxy/trombik.hostname/tasks
+..
+
+
+# ./roles.galaxy/trombik.hostname/templates
+templates       nlink=2 time=1560544141.434089000
+# ./roles.galaxy/trombik.hostname/templates
+..
+
+
+# ./roles.galaxy/trombik.hostname/tests
+tests           nlink=5 time=1560544141.437918000
+
+# ./roles.galaxy/trombik.hostname/tests/integration
+integration     nlink=3 time=1560544141.434583000
+
+# ./roles.galaxy/trombik.hostname/tests/integration/example
+example         nlink=7 time=1560544141.436819000
+
+# ./roles.galaxy/trombik.hostname/tests/integration/example/group_vars
+group_vars      nlink=2 time=1560544141.435582000
+# ./roles.galaxy/trombik.hostname/tests/integration/example/group_vars
+..
+
+
+# ./roles.galaxy/trombik.hostname/tests/integration/example/host_vars
+host_vars       nlink=2 time=1560544141.435775000
+# ./roles.galaxy/trombik.hostname/tests/integration/example/host_vars
+..
+
+
+# ./roles.galaxy/trombik.hostname/tests/integration/example/inventories
+inventories     nlink=2 time=1560544141.436129000
+# ./roles.galaxy/trombik.hostname/tests/integration/example/inventories
+..
+
+
+# ./roles.galaxy/trombik.hostname/tests/integration/example/roles
+roles           nlink=2 time=1560544141.436392000
+# ./roles.galaxy/trombik.hostname/tests/integration/example/roles
+..
+
+
+# ./roles.galaxy/trombik.hostname/tests/integration/example/spec
+spec            nlink=2 time=1560544141.437119000
+# ./roles.galaxy/trombik.hostname/tests/integration/example/spec
+..
+
+# ./roles.galaxy/trombik.hostname/tests/integration/example
+..
+
+# ./roles.galaxy/trombik.hostname/tests/integration
+..
+
+
+# ./roles.galaxy/trombik.hostname/tests/serverspec
+serverspec      nlink=2 time=1560544141.437757000
+# ./roles.galaxy/trombik.hostname/tests/serverspec
+..
+
+
+# ./roles.galaxy/trombik.hostname/tests/travisci
+travisci        nlink=2 time=1560544141.438269000
+# ./roles.galaxy/trombik.hostname/tests/travisci
+..
+
+# ./roles.galaxy/trombik.hostname/tests
+..
+
+
+# ./roles.galaxy/trombik.hostname/vars
+vars            nlink=2 time=1560544141.438958000
+# ./roles.galaxy/trombik.hostname/vars
+..
+
+# ./roles.galaxy/trombik.hostname
+..
+
+
+# ./roles.galaxy/trombik.vim
+trombik.vim     nlink=14 time=1560551689.339755000
+
+# ./roles.galaxy/trombik.vim/.github
+.github         nlink=2 time=1560551689.306244000
+# ./roles.galaxy/trombik.vim/.github
+..
+
+
+# ./roles.galaxy/trombik.vim/defaults
+defaults        nlink=2 time=1560551689.308026000
+# ./roles.galaxy/trombik.vim/defaults
+..
+
+
+# ./roles.galaxy/trombik.vim/extra_modules
+extra_modules   nlink=2 time=1560551689.308213000
+# ./roles.galaxy/trombik.vim/extra_modules
+..
+
+
+# ./roles.galaxy/trombik.vim/files
+files           nlink=2 time=1560551689.308376000
+# ./roles.galaxy/trombik.vim/files
+..
+
+
+# ./roles.galaxy/trombik.vim/filter_plugins
+filter_plugins  nlink=2 time=1560551689.308536000
+# ./roles.galaxy/trombik.vim/filter_plugins
+..
+
+
+# ./roles.galaxy/trombik.vim/handlers
+handlers        nlink=2 time=1560551689.308807000
+# ./roles.galaxy/trombik.vim/handlers
+..
+
+
+# ./roles.galaxy/trombik.vim/library
+library         nlink=2 time=1560551689.333411000
+# ./roles.galaxy/trombik.vim/library
+..
+
+
+# ./roles.galaxy/trombik.vim/meta
+meta            nlink=2 time=1560551689.340462000
+# ./roles.galaxy/trombik.vim/meta
+..
+
+
+# ./roles.galaxy/trombik.vim/tasks
+tasks           nlink=2 time=1560551689.335089000
+# ./roles.galaxy/trombik.vim/tasks
+..
+
+
+# ./roles.galaxy/trombik.vim/templates
+templates       nlink=2 time=1560551689.335294000
+# ./roles.galaxy/trombik.vim/templates
+..
+
+
+# ./roles.galaxy/trombik.vim/tests
+tests           nlink=5 time=1560551689.339226000
+
+# ./roles.galaxy/trombik.vim/tests/integration
+integration     nlink=3 time=1560551689.335857000
+
+# ./roles.galaxy/trombik.vim/tests/integration/example
+example         nlink=7 time=1560551689.338073000
+
+# ./roles.galaxy/trombik.vim/tests/integration/example/group_vars
+group_vars      nlink=2 time=1560551689.336945000
+# ./roles.galaxy/trombik.vim/tests/integration/example/group_vars
+..
+
+
+# ./roles.galaxy/trombik.vim/tests/integration/example/host_vars
+host_vars       nlink=2 time=1560551689.337142000
+# ./roles.galaxy/trombik.vim/tests/integration/example/host_vars
+..
+
+
+# ./roles.galaxy/trombik.vim/tests/integration/example/inventories
+inventories     nlink=2 time=1560551689.337446000
+# ./roles.galaxy/trombik.vim/tests/integration/example/inventories
+..
+
+
+# ./roles.galaxy/trombik.vim/tests/integration/example/roles
+roles           nlink=2 time=1560551689.337655000
+# ./roles.galaxy/trombik.vim/tests/integration/example/roles
+..
+
+
+# ./roles.galaxy/trombik.vim/tests/integration/example/spec
+spec            nlink=2 time=1560551689.338482000
+# ./roles.galaxy/trombik.vim/tests/integration/example/spec
+..
+
+# ./roles.galaxy/trombik.vim/tests/integration/example
+..
+
+# ./roles.galaxy/trombik.vim/tests/integration
+..
+
+
+# ./roles.galaxy/trombik.vim/tests/serverspec
+serverspec      nlink=2 time=1560551689.339066000
+# ./roles.galaxy/trombik.vim/tests/serverspec
+..
+
+
+# ./roles.galaxy/trombik.vim/tests/travisci
+travisci        nlink=2 time=1560551689.339595000
+# ./roles.galaxy/trombik.vim/tests/travisci
+..
+
+# ./roles.galaxy/trombik.vim/tests
+..
+
+
+# ./roles.galaxy/trombik.vim/vars
+vars            nlink=2 time=1560551689.340286000
+# ./roles.galaxy/trombik.vim/vars
+..
+
+# ./roles.galaxy/trombik.vim
+..
+
+# ./roles.galaxy
+..
+

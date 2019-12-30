@@ -1,0 +1,25 @@
+---
+galaxy_info:
+  role_name: hostname
+  author: Tomoyuki Sakurai
+  description: Configures hostname(1)
+  company: Reallyenglish
+  license: BSD
+  min_ansible_version: 2.0
+  platforms:
+    - name: FreeBSD
+      versions:
+        - 12.0
+    - name: OpenBSD
+      versions:
+        - 6.5
+    - name: Ubuntu
+      versions:
+        - trusty
+        - xenial
+    - name: EL
+      versions:
+        - 7
+  galaxy_tags:
+    - hostname
+dependencies: []

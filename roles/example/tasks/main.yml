@@ -1,0 +1,5 @@
+---
+
+- name: An example task
+  debug:
+    msg: Hello world!

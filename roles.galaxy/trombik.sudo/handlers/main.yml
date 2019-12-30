@@ -1,0 +1,6 @@
+---
+
+- name: Restart sudo
+  service:
+    name: sudo
+    state: restarted

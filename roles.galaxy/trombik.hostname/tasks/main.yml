@@ -1,0 +1,32 @@
+---
+# tasks file for ansible-role-hostname
+
+- include_vars: "{{ ansible_os_family }}.yml"
+
+- name: Assert hostname_fqdn is defined and NOT empty
+  assert:
+    msg: hostname_fqdn must be defined and NOT empty
+    that:
+      - hostname_fqdn is defined
+      - hostname_fqdn != ""
+
+# XXX replace `include` with `include_task` after all platforms have recent
+# version of ansible
+- include: "configure-{{ ansible_os_family }}.yml"
+
+- name: Set hostname by hostname(1)
+  command: "hostname {% if ansible_os_family == 'Debian' %}{{ hostname_fqdn.split('.') | first }}{% else %}{{ hostname_fqdn }}{% endif %}"
+  when:
+    - ansible_fqdn != hostname_fqdn
+
+- name: Load facts again
+  setup:
+  when:
+    - ansible_fqdn != hostname_fqdn
+
+- name: Assert ansible_fqdn has been updated to hostname_fqdn
+  assert:
+    msg: "ansible_fqdn (`{{ ansible_fqdn }}`) is not identical with `{{ hostname_fqdn }}` after executing the role. this should not happen and probably is a bug in the role"
+    that:
+      - ansible_fqdn == hostname_fqdn
+  when: not ansible_check_mode

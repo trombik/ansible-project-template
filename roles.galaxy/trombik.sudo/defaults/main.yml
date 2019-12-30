@@ -1,0 +1,7 @@
+---
+sudo_package: "{{ __sudo_package }}"
+sudo_extra_packages: []
+sudo_config_dir: "{{ __sudo_config_dir }}"
+sudo_confd_dir: "{{ sudo_config_dir }}/sudoers.d"
+sudo_configs: []
+sudo_sudoer: ""

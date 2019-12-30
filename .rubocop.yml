@@ -1,0 +1,44 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  Exclude:
+    # there is no reason to test external files
+    - "roles.galaxy/**/*"
+    - "vendor/**/*"
+    - "tests/integration/**/roles/*"
+    - "roles/fluent_plugin_pcapng/files/in_pcapng.rb"
+    - "ruby/**/*"
+  DisplayCopNames: true
+  ExtraDetails: true
+  DisplayStyleGuide: true
+  AllowSymlinksInCacheRootDirectory: true
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/SymbolArray:
+  EnforcedStyle: brackets
+
+Metrics/BlockLength:
+  Exclude:
+    - "**/*_spec.rb"
+    - "**/Vagrantfile"
+    - "spec/serverspec/shared_examples/*.rb"
+  ExcludedMethods:
+    - describe
+    - context
+    - shared_examples
+
+Metrics/LineLength:
+  Exclude:
+    - "**/*_spec.rb"
+    - "**/Vagrantfile"
+    - "Gemfile"
+  AllowHeredoc: true
+  AllowURI: true
+  URISchemes:
+    - http
+    - https
+    - git
+    - ftp
+  IgnoreCopDirectives: true

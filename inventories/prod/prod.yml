@@ -1,0 +1,15 @@
+---
+all:
+  hosts:
+    myhost.i.trombik.org:
+      ansible_host: 10.1.5.110
+  children:
+    foo:
+      hosts:
+        myhost.i.trombik.org:
+    prod_credentials:
+      children:
+        foo:
+    prod:
+      children:
+        foo:

@@ -1,0 +1,11 @@
+---
+
+- name: Install sudo
+  yum:
+    name: "{{ sudo_package }}"
+    state: present
+
+- name: Install sudo_extra_packages
+  yum:
+    name: "{{ sudo_extra_packages }}"
+    state: present

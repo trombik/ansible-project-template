@@ -1,0 +1,11 @@
+---
+
+- name: Install sudo
+  openbsd_pkg:
+    name: "{{ sudo_package }}"
+    state: present
+
+- name: Install sudo_extra_packages
+  openbsd_pkg:
+    name: "{{ sudo_extra_packages }}"
+    state: present

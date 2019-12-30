@@ -1,0 +1,10 @@
+---
+# XXX confusing syntax, but this is how to use a variable for a dict key
+hosts_map: "{
+  '{{ ansible_eth1.ipv4.address }}': ['{{ inventory_hostname }}']
+}"
+
+hostname_fqdn: "{% if ansible_os_family == 'Debian' %}{{ inventory_hostname.split('.') | first }}{% else %}{{ inventory_hostname }}{% endif %}"
+hosts_enable_localhost: yes
+hosts_extra_localhosts:
+  - "{{ inventory_hostname }}"

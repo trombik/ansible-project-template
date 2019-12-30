@@ -1,0 +1,9 @@
+---
+
+- name: Update hostname in /etc/sysconfig/network
+  lineinfile:
+    dest: /etc/sysconfig/network
+    line: "HOSTNAME=\"{{ hostname_fqdn }}\""
+    regexp: "^HOSTNAME="
+    state: present
+    validate: sh -n %s

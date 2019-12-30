@@ -1,0 +1,2 @@
+--ignore-dir=vendor
+--ignore-dir=roles.galaxy

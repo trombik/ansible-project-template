@@ -1,0 +1,6 @@
+---
+
+- name: Restart hostname
+  service:
+    name: hostname
+    state: restarted

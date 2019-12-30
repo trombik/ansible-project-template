@@ -1,0 +1,59 @@
+---
+# tasks file for ansible-role-sudo
+
+- name: Include OS-specific variables
+  include_vars: "{{ ansible_os_family }}.yml"
+
+- name: Include OS-specific tasks
+  include: "install-{{ ansible_os_family }}.yml"
+
+- name: Create sudo_config_dir
+  file:
+    path: "{{ sudo_config_dir }}"
+    mode: 0755
+    state: directory
+
+- name: Create sudo_confd_dir
+  file:
+    path: "{{ sudo_confd_dir }}"
+    mode: 0755
+    state: directory
+
+- name: Validate sudo_configs
+  assert:
+    that:
+      - "'name' in item"
+  with_items: "{{ sudo_configs }}"
+
+- name: Validate `state` attribute in sudo_configs
+  assert:
+    that:
+      - "item.state == 'present' or item.state == 'absent'"
+  when:
+    - "'state' in item"
+  with_items: "{{ sudo_configs }}"
+
+- name: Create sudo_configs under sudoers.d
+  template:
+    src: sudo.j2
+    dest: "{{ sudo_confd_dir }}/{{ item.name }}"
+    validate: visudo -cf %s
+    mode: 0440
+  when:
+    - "not 'state' in item or item.state == 'present'"
+  with_items: "{{ sudo_configs }}"
+
+- name: Remove sudo_configs under sudoers.d
+  file:
+    path: "{{ sudo_confd_dir }}/{{ item.name }}"
+    state: absent
+  when:
+    - "'state' in item"
+    - "item.state == 'absent'"
+  with_items: "{{ sudo_configs }}"
+
+- name: Create sudoer
+  template:
+    src: sudoers.j2
+    dest: "{{ sudo_config_dir }}/sudoers"
+    validate: visudo -cf %s

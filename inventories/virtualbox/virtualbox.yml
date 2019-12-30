@@ -1,0 +1,16 @@
+---
+all:
+  hosts:
+    myhost.i.trombik.org:
+      vagrant_priority: 11
+      ansible_host: 172.16.100.200
+  children:
+    foo:
+      hosts:
+        myhost.i.trombik.org:
+    virtualbox_credentials:
+      children:
+        foo:
+    virtualbox:
+      children:
+        foo:

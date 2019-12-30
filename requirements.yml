@@ -1,0 +1,8 @@
+---
+
+- name: trombik.hostname
+- name: trombik.hosts
+- name: trombik.sudo
+- name: trombik.zsh
+- name: trombik.vim
+- name: trombik.tmux

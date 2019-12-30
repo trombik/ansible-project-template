@@ -1,0 +1,2 @@
+vim_package: "{{ __vim_package }}"
+vim_additional_packages: []
