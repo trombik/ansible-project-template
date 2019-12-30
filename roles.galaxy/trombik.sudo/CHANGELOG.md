@@ -1,3 +1,7 @@
+## Release 1.0.3
+
+* 81941b5 bugfix: QA
+
 ## Release 1.0.2
 
 * a2e5289 bugfix: wrong path to sudoers(5)
